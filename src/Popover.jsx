@@ -29,6 +29,7 @@ var Popover = React.createClass({
     classes['popover'] = true;
     classes[this.props.placement] = true;
     classes['in'] = this.props.positionLeft != null || this.props.positionTop != null;
+    classes[this.props.className] = this.props.className ? true : false;
 
     var style = {};
     style['left'] = this.props.positionLeft;
